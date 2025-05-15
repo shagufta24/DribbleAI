@@ -14,7 +14,7 @@ Dribble.AI is a deep learning-based system developed for automated ball action s
 ---
 
 ## 🧠 Architecture 
-![System Architecture](images/system_architecture.png)
+![System Architecture](Images/system_architecture.jpeg)
 
 - **CNN Backbone:** Extracts spatial features from frames (e.g., ResNet, EfficientNet).
 - **Temporal Encoder:** Transformer layers capture sequential context for frame-level predictions.
@@ -24,7 +24,7 @@ Dribble.AI is a deep learning-based system developed for automated ball action s
 ---
 
 ## 📈 Results 
-![Prediction Demo](images/prediction_demo.gif)
+![Prediction Demo](Images/prediction_demo.gif)
 - **Best mAP@1s**: 0.6658
 
 Model performance is expected to improve further with extended 720p video training, which was not completed due to compute constraints.
