@@ -25,10 +25,7 @@ Dribble.AI is a deep learning-based system developed for automated ball action s
 
 ## 📈 Results 
 ![Prediction Demo](images/prediction_demo.gif)
-- **Best mAP@1s**: 0.0858
-- **Classes with Highest AP**:
-  - Class 02 (e.g., Shot) – AP: 0.3728
-  - Class 06 – AP: 0.0761
+- **Best mAP@1s**: 0.6658
 
 Model performance is expected to improve further with extended 720p video training, which was not completed due to compute constraints.
 
