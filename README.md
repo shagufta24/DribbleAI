@@ -46,6 +46,8 @@ We evaluated two models trained at different resolutions on the held-out test ma
 | Pass       | 0.5456    | 0.5256    | 0.1264     | 0.8184    | 0.7657    | 0.5303     |
 | Throw-in   | 0.2823    | 0.7183    | 0.2773     | 0.6493    | 0.7689    | 0.5330     |
 
+![Prediction Demo](gifs/prediction_demo.gif)
+
 The transition to 720p resolution substantially improved the model's ability to detect and localize ball actions across all categories. This was especially evident in high-frequency actions such as `Pass` and `Drive`, which showed notable gains in both Average Precision (AP) and Matthews Correlation Coefficient (MCC). Model performance is expected to improve further with extended 720p video training, which was not completed due to compute constraints.
 
 --- 
