@@ -23,11 +23,30 @@ Dribble.AI is a deep learning-based system developed for automated ball action s
 
 ---
 
-## 📈 Results 
-![Prediction Demo](Images/prediction_demo.gif)
-- **Best mAP@1s**: 0.6658
+## 📈 Results
 
-Model performance is expected to improve further with extended 720p video training, which was not completed due to compute constraints.
+We evaluated two models trained at different resolutions on the held-out test match *Middlesbrough vs Preston North End*.
+
+- The **224p model** achieved:  
+  - **Macro F1 Score:** `0.2947`  
+  - **Mean Average Precision (mAP):** `0.4115`  
+
+- The **720p model** significantly improved performance with:  
+  - **Macro F1 Score:** `0.5661`  
+  - **Mean Average Precision (mAP):** `0.6618`  
+
+### 🔬 Per-Class Metrics Comparison
+
+| Class      | AP (224p) | BA (224p) | MCC (224p) | AP (720p) | BA (720p) | MCC (720p) |
+|------------|-----------|-----------|------------|-----------|-----------|------------|
+| Cross      | 0.3971    | 0.7784    | 0.3821     | 0.4428    | 0.8007    | 0.4245     |
+| Drive      | 0.5750    | 0.6204    | 0.2563     | 0.8246    | 0.7987    | 0.5931     |
+| Header     | 0.3210    | 0.6179    | 0.2792     | 0.6251    | 0.6430    | 0.4716     |
+| High-Pass  | 0.3481    | 0.5434    | 0.1876     | 0.6104    | 0.7088    | 0.5162     |
+| Pass       | 0.5456    | 0.5256    | 0.1264     | 0.8184    | 0.7657    | 0.5303     |
+| Throw-in   | 0.2823    | 0.7183    | 0.2773     | 0.6493    | 0.7689    | 0.5330     |
+
+The transition to 720p resolution substantially improved the model's ability to detect and localize ball actions across all categories. This was especially evident in high-frequency actions such as `Pass` and `Drive`, which showed notable gains in both Average Precision (AP) and Matthews Correlation Coefficient (MCC). Model performance is expected to improve further with extended 720p video training, which was not completed due to compute constraints.
 
 --- 
 
